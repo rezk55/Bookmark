@@ -1,12 +1,13 @@
 
+:root {
+    --bg-color:#F7ECDE;
+    --first-color:#FEC260;
+    --second-color:#BB4120;
+}
+
 body {
-    background-color: #F7ECDE;
+    background-color: var(--bg-color);
     font-family: "PT Sans Caption", sans-serif;
-    /* #FEC260 */
-    /* #3FA55C */
-    /* #352E28 */
-    /* #212529 */
-    /* #BB4120 */
 }
 
 .title-main {
@@ -39,7 +40,7 @@ h1::after {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #FEC260;
+    background-color: var(--first-color);
     z-index: -1;
     transition: height 0.4s;
     -webkit-transition: height 0.4s;
@@ -64,8 +65,8 @@ h1:hover::after {
 }
 
 input:focus {
-    box-shadow: 0 0 0.7rem 0.1rem #FEC260 !important;
-    border: 1px solid #FEC260 !important;
+    box-shadow: 0 0 0.7rem 0.1rem var(--first-color) !important;
+    border: 1px solid var(--first-color) !important;
 }
 
 .btn-submit {
@@ -73,7 +74,7 @@ input:focus {
     padding: 8px;
     border-radius: 5px;
     border: none;
-    /*#D1512D*//*#bb4120*//*#a03315*/background-color: #D1512D;
+    background-color: #D1512D;
     color: #fff;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -87,7 +88,7 @@ input:focus {
 }
 
 .btn-submit:hover {
-    background-color:#bb4120;
+    background-color var(--second-color);
 }
 
 .form {
@@ -118,5 +119,5 @@ input:focus {
 }
 
 #myModal i {
-    color: #BB4120;
+    color: var(--second-color);
 }
