@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="bookmark.png" type="image/x-icon">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- my Style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="title-main pb-5">
+        <h1 class="text-center mt-5 mx-auto ">Bookmarker</h1>
+    </div>
+    <div class="container">
+        <div class="title d-flex justify-content-center mt-3">
+            <i class="fa-solid fa-bookmark fs-3 d-flex align-items-center pb-1"></i>
+            <h2 class="fs-3 mx-1 border-black">Bookmark your favorite sites</h2>
+            <i class="fa-solid fa-bookmark fs-3 d-flex align-items-center pb-1"></i>
+        </div>
+        <div class="form pb-4">
+            <div class="site-name mt-4 ">
+                <i class="fa-solid fa-book-bookmark pe-1"></i>
+                <label class="fw-bold text-capitalize" for="">site name</label>
+                <input class="form-control mt-2 p-2" type="text" name="site-name" id="siteName" placeholder="Bookmark Name" required>
+            </div>
+            <div class="site-url mt-4 ">
+                <i class="fa-solid fa-link pe-1"></i>
+                <label class="fw-bold text-capitalize" for="">website URL</label>
+                <input class="form-control my-2 p-2" type="text" name="site-url" id="siteURL" placeholder="Website URL" required>
+            </div>
+            <div class="submit mt-4 text-center">
+                <button class="btn-submit" id="submit" type="button" onclick="validate()" >Submit</button>
+            </div>
+         
+            <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content p-3">
+                    <div class="modal-header">
+                      <div class="modal-title d-flex gap-2" id="exampleModalLabel">
+                        <div class="circle bg-danger rounded-circle"></div>
+                        <div class="circle bg-warning rounded-circle"></div>
+                        <div class="circle bg-success rounded-circle"></div>
+                      </div>
+                      <button type="button" class="btn-close text-black" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body mt-4">
+                        <h5>Site Name or Url is not valid, Please follow the rules below :</h5>
+                        <ul class="rules list-unstyled">
+                            <li>
+                                <i class="fa-regular fa-circle-right p-2"></i>
+                                Site name must contain at least 3 characters
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-circle-right p-2"></i>
+                                Site URL must be a valid one
+                            </li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <table class="table mt-4 px-5 text-center table-hover">
+            <thead class="" id="headTabble">
+                <th>index</th>
+                <th>Website Name</th>
+                <th>Visit</th>
+                <th>Delete</th>
+            </thead>
+            <tbody id="showURL">
+            </tbody>
+        </table>
+        
+    </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
