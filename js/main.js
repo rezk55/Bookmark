@@ -104,7 +104,7 @@ function displayURLS(){
                     <td>${i+1}</td>
                     <td>${siteList[i].name}</td>
                     <td>
-                      <a class="btn btn-success btn-visit" href="${siteList[i].url}" target="_blank"><i class="fa fa-eye"></i> Visit</a> 
+                      <a class="btn btn-success btn-visit" href="https://${siteList[i].url}" target="_blank"><i class="fa fa-eye"></i> Visit</a> 
                      </td>
                     <td><button class="btn btn-danger" onclick="deleteURL(${i})"> <i class="fa fa-trash-can"></i> Delete</button></td>
                 </tr>`;
