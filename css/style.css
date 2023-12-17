@@ -74,7 +74,7 @@ input:focus {
     padding: 8px;
     border-radius: 5px;
     border: none;
-    background-color: #D1512D;
+    background-color: #da3e12;
     color: #fff;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -88,7 +88,7 @@ input:focus {
 }
 
 .btn-submit:hover {
-    background-color var(--second-color);
+    background-color: var(--second-color);
 }
 
 .form {
