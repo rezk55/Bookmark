@@ -24,7 +24,7 @@ body {
     border-bottom: 2px dotted #352E28;
 }
 
-h1 {
+.title-main h1 {
     width: max-content;
     font-family: Pacifico, cursive;
     font-size: 3.1rem;
@@ -32,7 +32,7 @@ h1 {
     position: relative;
 }
 
-h1::after {
+.title-main h1::after {
     position: absolute;
     content: "";
     width: 100%;
@@ -49,7 +49,7 @@ h1::after {
     -o-transition: height 0.4s;
 }
 
-h1:hover::after {
+.title-main h1:hover::after {
     height: 65%;
 }
 
@@ -64,6 +64,10 @@ h1:hover::after {
     font-family: Righteous, cursive;
     text-align: center;
 }
+
+.form {
+    border-bottom: 2px dotted #352E28;
+} 
 
 input:focus {
     box-shadow: 0 0 0.7rem 0.1rem var(--first-color) !important;
@@ -90,10 +94,6 @@ input:focus {
 
 .btn-submit:hover {
     background-color: var(--second-color);
-}
-
-.form {
-    border-bottom: 2px dotted #352E28;
 }
 
 .table {

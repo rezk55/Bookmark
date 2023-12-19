@@ -104,9 +104,9 @@ function displayURLS(){
                     <td>${i+1}</td>
                     <td>${siteList[i].name}</td>
                     <td>
-                      <a class="btn btn-success btn-visit" href="https://${siteList[i].url}" target="_blank"><i class="fa fa-eye"></i> Visit</a> 
+                      <a class="btn btn-success btn-visit" href="https://${siteList[i].url}" target="_blank"><i class="fa fa-eye"></i> <span class="d-inline-block">Visit</span> </a> 
                      </td>
-                    <td><button class="btn btn-danger" onclick="deleteURL(${i})"> <i class="fa fa-trash-can"></i> Delete</button></td>
+                    <td><button class="btn btn-danger" onclick="deleteURL(${i})"> <i class="fa fa-trash-can"></i> <span class="d-inline-block">Delete</span></button></td>
                 </tr>`;
     }
     // console.log(localStorage.sites);
